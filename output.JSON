@@ -1,0 +1,88 @@
+
+        {
+        "Company":[
+        
+            {
+            "brand": "Asus",
+            "model":"Zenbook 14"
+            },
+            {
+            "brand": "Dell",
+            "model":"Inspiron 15"
+            },
+            {
+            "brand": "HP",
+            "model":"EliteBook G8"
+            },
+            {
+            "brand": "Lenovo",
+            "model":"legion 5"
+            },
+            {
+            "brand": "MSI",
+            "model":"GF75 thin 9SCXR"
+            }
+        ],
+        "Prices":[
+        
+                {
+                "normal Price": "25000CZK"
+                },
+                {
+                "discounted Price": "21250CZK",
+                "discount": "15%"
+                },
+                {
+                "normal Price": "24900CZK"
+                },
+                {
+                "discounted Price": "23655CZK",
+                "discount": "5%"
+                },
+                {
+                "normal Price": "38000CZK"
+                },
+                {
+                "discounted Price": "34200CZK",
+                "discount": "10%"
+                },
+                {
+                "normal Price": "25000CZK"
+                },
+                {
+                "discounted Price": "20720CZK",
+                "discount": "20%"
+                },
+                {
+                "normal Price": "37000CZK"
+                },
+                {
+                "discounted Price": "29600CZK",
+                "discount": "20%"
+                }
+        ],
+        "discount type":[
+        
+                        {
+                        "normal discount": "10",
+                        "discounted value": "34200"
+                        },
+                        {
+                        "student discount": "15",
+                        "discounted value": "21250"
+                        },
+                        {
+                        "student discount": "20",
+                        "discounted value": "20720"
+                        },
+                        {
+                        "student discount": "20",
+                        "discounted value": "29600"
+                        },
+                        {
+                        "normal discount": "5",
+                        "discounted value": "23655"
+                        }
+        ]
+        }
+    

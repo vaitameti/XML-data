@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="screensize">
+    <xs:complexType>
+      <xs:simpleContent>
+        <xs:extension base="xs:decimal">
+          <xs:attribute type="xs:string" name="size" use="optional"/>
+        </xs:extension>
+      </xs:simpleContent>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="resolution">
+    <xs:complexType>
+      <xs:simpleContent>
+        <xs:extension base="xs:string">
+          <xs:attribute type="xs:string" name="resolve" use="optional"/>
+        </xs:extension>
+      </xs:simpleContent>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="refreshRate">
+    <xs:complexType>
+      <xs:simpleContent>
+        <xs:extension base="xs:decimal">
+          <xs:attribute type="xs:string" name="frequency" use="optional"/>
+        </xs:extension>
+      </xs:simpleContent>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="gpu_type">
+    <xs:simpleType>
+
+      <!--custom restriction 1-->
+      <xs:restriction base="xs:string">
+        <xs:enumeration value="integrated"/>
+        <xs:enumeration value="discrete"/>
+        <xs:enumeration value="n/a"/>
+      </xs:restriction>
+
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="gpu_name"/>
+  <xs:element name="gpu_model"/>
+  <xs:element name="cpu_name">
+    <xs:simpleType>
+      <!--custom restriction 2-->
+      <xs:restriction base="xs:string">
+        <xs:enumeration value="Intel"/>
+        <xs:enumeration value="AMD"/>
+        <xs:enumeration value="Nvidia"/>
+      </xs:restriction>
+
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="cpu_model"/>
+  <xs:element name="RAM_size">
+    <xs:complexType>
+      <xs:simpleContent>
+        <xs:extension base="xs:decimal">
+          <xs:attribute type="xs:string" name="byte" use="required"/>
+        </xs:extension>
+      </xs:simpleContent>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RAM_type">
+    <xs:simpleType>
+
+      <!--custom restriction 3-->
+      <xs:restriction base="xs:string">
+        <xs:pattern value="[D][D][R][1-4]"/>
+      </xs:restriction>
+
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="memory_frequency">
+    <xs:complexType>
+      <xs:simpleContent>
+        <xs:extension base="xs:decimal">
+          <xs:attribute type="xs:string" name="frequency" use="optional"/>
+        </xs:extension>
+      </xs:simpleContent>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="storage_capacity">
+    <xs:complexType>
+      <xs:simpleContent>
+        <xs:extension base="xs:decimal">
+          <xs:attribute type="xs:string" name="byte" use="optional"/>
+        </xs:extension>
+      </xs:simpleContent>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="storage_type">
+    <xs:simpleType>
+
+      <!--custom restriction 4-->
+      <xs:restriction base="xs:string">
+        <xs:enumeration value="SSD"/>
+        <xs:enumeration value="HDD"/>
+        <xs:enumeration value="SSD and HDD"/>
+      </xs:restriction>
+
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="width">
+    <xs:complexType>
+      <xs:simpleContent>
+        <xs:extension base="xs:decimal">
+          <xs:attribute type="xs:string" name="milimeter" use="optional"/>
+        </xs:extension>
+      </xs:simpleContent>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="height">
+    <xs:complexType>
+      <xs:simpleContent>
+        <xs:extension base="xs:decimal">
+          <xs:attribute type="xs:string" name="milimeter" use="optional"/>
+        </xs:extension>
+      </xs:simpleContent>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="battery_size">
+    <xs:complexType>
+      <xs:simpleContent>
+        <xs:extension base="xs:decimal">
+          <xs:attribute type="xs:string" name="ampere" use="optional"/>
+        </xs:extension>
+      </xs:simpleContent>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="charging_power">
+    <xs:complexType>
+      <xs:simpleContent>
+        <xs:extension base="xs:decimal">
+          <xs:attribute type="xs:string" name="power" use="optional"/>
+        </xs:extension>
+      </xs:simpleContent>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="charge_duration">
+    <xs:complexType>
+      <xs:simpleContent>
+        <xs:extension base="xs:decimal">
+          <xs:attribute type="xs:string" name="time" use="optional"/>
+        </xs:extension>
+      </xs:simpleContent>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="value">
+    <xs:simpleType>
+
+      <!--custom restriction 5-->
+      <xs:restriction base="xs:decimal">
+        <xs:minInclusive value="0"></xs:minInclusive>
+        <xs:maxExclusive value="500000"></xs:maxExclusive>
+      </xs:restriction>
+
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="currency">
+    <xs:simpleType>
+
+      <!--custom restriction 6-->
+      <xs:restriction base="xs:string">
+        <xs:length value="3"/>
+        <xs:enumeration value="CZK"/>
+        <xs:enumeration value="USD"/>
+        <xs:enumeration value="EUR"/>
+        <xs:enumeration value="YEN"/>
+      </xs:restriction>
+
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="discount">
+    <xs:complexType>
+      <xs:simpleContent>
+        <xs:extension base="xs:string">
+          <xs:attribute type="xs:string" name="percent" use="optional"/>
+        </xs:extension>
+      </xs:simpleContent>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="discounted_value"/>
+  <xs:element name="price">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="value" minOccurs="0"/>
+        <xs:element ref="discount" minOccurs="0"/>
+        <xs:element ref="discounted_value" minOccurs="0"/>
+        <xs:element ref="currency"/>
+      </xs:sequence>
+      <xs:attribute type="xs:string" name="type" use="optional"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="display">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="screensize"/>
+        <xs:element ref="resolution"/>
+        <xs:element ref="refreshRate"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="gpu">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="gpu_type"/>
+        <xs:element ref="gpu_name"/>
+        <xs:element ref="gpu_model"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="cpu">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="cpu_name"/>
+        <xs:element ref="cpu_model"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="system_memory">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="RAM_size"/>
+        <xs:element ref="RAM_type"/>
+        <xs:element ref="memory_frequency"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="storage">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="storage_capacity"/>
+        <xs:element ref="storage_type"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="dimensions">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="width"/>
+        <xs:element ref="height"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="charging">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="battery_size"/>
+        <xs:element ref="charging_power"/>
+        <xs:element ref="charge_duration"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="weight">
+    <xs:complexType>
+      <xs:simpleContent>
+        <xs:extension base="xs:string">
+          <xs:attribute type="xs:string" name="kilo" use="optional"/>
+        </xs:extension>
+      </xs:simpleContent>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="prices">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="price" maxOccurs="unbounded" minOccurs="0"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="company_name"/>
+  <xs:element name="model"/>
+  <xs:element name="detail">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="display"/>
+        <xs:element ref="gpu"/>
+        <xs:element ref="cpu"/>
+        <xs:element ref="system_memory"/>
+        <xs:element ref="storage"/>
+        <xs:element ref="dimensions"/>
+        <xs:element ref="charging"/>
+        <xs:element ref="weight"/>
+        <xs:element ref="prices"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="company">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="company_name"/>
+        <xs:element ref="model"/>
+        <xs:element ref="detail"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="laptops">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="company" maxOccurs="unbounded" minOccurs="5"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

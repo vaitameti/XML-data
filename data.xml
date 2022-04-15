@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<laptops xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="data.xsd">
+    <company>
+        <company_name>Dell</company_name>
+        <model>Inspiron 15</model>
+        <detail>
+            <display>
+                <screensize size="inch">15.6</screensize>
+                <resolution resolve="pixel">1920*1080</resolution>
+                <refreshRate frequency="Hz">60</refreshRate>
+            </display>
+            <gpu>
+                <gpu_type>integrated</gpu_type>
+                <gpu_name>Nvidia</gpu_name>
+                <gpu_model>GeForce MX350</gpu_model>
+            </gpu>
+            <cpu>
+                <cpu_name>Intel</cpu_name>
+                <cpu_model>i7-1165G7</cpu_model>
+            </cpu>
+            <system_memory>
+                <RAM_size byte="GB">12</RAM_size>
+                <RAM_type>DDR4</RAM_type>
+                <memory_frequency frequency="GHz">2.4</memory_frequency>
+            </system_memory>
+            <storage>
+                <storage_capacity byte="GB">1024</storage_capacity>
+                <storage_type>SSD</storage_type>
+            </storage>
+            <dimensions>
+                <width milimeter="mm">356.1</width>
+                <height milimeter="mm">17.9</height>
+            </dimensions>
+            <charging>
+                <battery_size ampere="mAh">4200</battery_size>
+                <charging_power power="W">65</charging_power>
+                <charge_duration time="h">9</charge_duration>
+            </charging>
+            <weight kilo="kg">2.36</weight>
+            <prices>
+                <price type="normal">
+                    <value>25000</value>
+                    <currency>CZK</currency>
+                </price>
+                <price type="discounted">
+                    <discount percent="%">15</discount>
+                    <discounted_value>21250</discounted_value>
+                    <currency>CZK</currency>
+                </price>
+            </prices>
+        </detail>
+    </company>
+    <company>
+        <company_name>MSI</company_name>
+        <model>GF75 thin 9SCXR</model>
+        <detail>
+            <display>
+                <screensize size="inch">17.3</screensize>
+                <resolution resolve="pixel">1920*1080</resolution>
+                <refreshRate frequency="Hz">120</refreshRate>
+            </display>
+            <gpu>
+                <gpu_type>discrete</gpu_type>
+                <gpu_name>Nvidia</gpu_name>
+                <gpu_model>GeForce GTX 1650</gpu_model>
+            </gpu>
+            <cpu>
+                <cpu_name>Intel</cpu_name>
+                <cpu_model>i7-92345</cpu_model>
+            </cpu>
+            <system_memory>
+                <RAM_size byte="GB">32</RAM_size>
+                <RAM_type>DDR4</RAM_type>
+                <memory_frequency frequency="GHz">2.6</memory_frequency>
+            </system_memory>
+            <storage>
+                <storage_capacity byte="GB">1024</storage_capacity>
+                <storage_type>HDD</storage_type>
+            </storage>
+            <dimensions>
+                <width milimeter="mm">390.1</width>
+                <height milimeter="mm">20.9</height>
+            </dimensions>
+            <charging>
+                <battery_size ampere="mAh">4800</battery_size>
+                <charging_power power="W">150</charging_power>
+                <charge_duration time="h">8</charge_duration>
+            </charging>
+            <weight kilo="kg">2.2</weight>
+            <prices>
+                <price type="normal">
+                    <value>24900</value>
+                    <currency>CZK</currency>
+                </price>
+                <price type="discounted">
+                    <discount percent="%">5</discount>
+                    <discounted_value>23655</discounted_value>
+                    <currency>CZK</currency>
+                </price>
+            </prices>
+        </detail>
+    </company>
+    <company>
+        <company_name>Lenovo</company_name>
+        <model>legion 5</model>
+        <detail>
+            <display>
+                <screensize size="inch">16</screensize>
+                <resolution resolve="pixel">2560*1600</resolution>
+                <refreshRate frequency="Hz">165</refreshRate>
+            </display>
+            <gpu>
+                <gpu_type>discrete</gpu_type>
+                <gpu_name>Nvidia</gpu_name>
+                <gpu_model>GeForce RTX 3070</gpu_model>
+            </gpu>
+            <cpu>
+                <cpu_name>AMD</cpu_name>
+                <cpu_model>ryzen 7</cpu_model>
+            </cpu>
+            <system_memory>
+                <RAM_size byte="GB">16</RAM_size>
+                <RAM_type>DDR4</RAM_type>
+                <memory_frequency frequency="GHz">4.3</memory_frequency>
+            </system_memory>
+            <storage>
+                <storage_capacity byte="GB">512</storage_capacity>
+                <storage_type>SSD</storage_type>
+            </storage>
+            <dimensions>
+                <width milimeter="mm">382.1</width>
+                <height milimeter="mm">21.9</height>
+            </dimensions>
+            <charging>
+                <battery_size ampere="mAh">5200</battery_size>
+                <charging_power power="W">160</charging_power>
+                <charge_duration time="h">6</charge_duration>
+            </charging>
+            <weight kilo="kg">2.5</weight>
+            <prices>
+                <price type="normal">
+                    <value>38000</value>
+                    <currency>CZK</currency>
+                </price>
+                <price type="discounted">
+                    <discount percent="%">10</discount>
+                    <discounted_value>34200</discounted_value>
+                    <currency>CZK</currency>
+                </price>
+            </prices>
+        </detail>
+
+    </company>
+    <company>
+        <company_name>Asus</company_name>
+        <model>Zenbook 14</model>
+        <detail>
+            <display>
+                <screensize size="inch">14</screensize>
+                <resolution resolve="pixel">1920*1080</resolution>
+                <refreshRate frequency="Hz">60</refreshRate>
+            </display>
+            <gpu>
+                <gpu_type>integrated</gpu_type>
+                <gpu_name>AMD</gpu_name>
+                <gpu_model>Radeon Vega 7</gpu_model>
+            </gpu>
+            <cpu>
+                <cpu_name>AMD</cpu_name>
+                <cpu_model>ryzen 5</cpu_model>
+            </cpu>
+            <system_memory>
+                <RAM_size byte="GB">16</RAM_size>
+                <RAM_type>DDR3</RAM_type>
+                <memory_frequency frequency="GHz">3.2</memory_frequency>
+            </system_memory>
+            <storage>
+                <storage_capacity byte="GB">1024</storage_capacity>
+                <storage_type>SSD</storage_type>
+            </storage>
+            <dimensions>
+                <width milimeter="mm">374.1</width>
+                <height milimeter="mm">19.9</height>
+            </dimensions>
+            <charging>
+                <battery_size ampere="mAh">6000</battery_size>
+                <charging_power power="W">67</charging_power>
+                <charge_duration time="h">10</charge_duration>
+            </charging>
+            <weight kilo="kg">1.3</weight>
+            <prices>
+                <price type="normal">
+                    <value>25000</value>
+                    <currency>CZK</currency>
+                </price>
+                <price type="discounted">
+                    <discount percent="%">20</discount>
+                    <discounted_value>20720</discounted_value>
+                    <currency>CZK</currency>
+                </price>
+            </prices>
+        </detail>
+    </company>
+    <company>
+
+        <company_name>HP</company_name>
+        <model>EliteBook G8</model>
+        <detail>
+            <display>
+                <screensize size="inch">15.6</screensize>
+                <resolution resolve="pixel">1920*1080</resolution>
+                <refreshRate frequency="Hz">60</refreshRate>
+            </display>
+            <gpu>
+                <gpu_type>integrated</gpu_type>
+                <gpu_name>AMD</gpu_name>
+                <gpu_model>Radeon graphics</gpu_model>
+            </gpu>
+            <cpu>
+                <cpu_name>AMD</cpu_name>
+                <cpu_model>ryzen 7</cpu_model>
+            </cpu>
+            <system_memory>
+                <RAM_size byte="GB">16</RAM_size>
+                <RAM_type>DDR4</RAM_type>
+                <memory_frequency frequency="GHz">3.2</memory_frequency>
+            </system_memory>
+            <storage>
+                <storage_capacity byte="GB">512</storage_capacity>
+                <storage_type>SSD</storage_type>
+            </storage>
+            <dimensions>
+                <width milimeter="mm">359.6</width>
+                <height milimeter="mm">19.2</height>
+            </dimensions>
+            <charging>
+                <battery_size ampere="mAh">4500</battery_size>
+                <charging_power power="W">65</charging_power>
+                <charge_duration time="h">7</charge_duration>
+            </charging>
+            <weight kilo="kg">1.7</weight>
+            <prices>
+                <price type="normal">
+                    <value>37000</value>
+                    <currency>CZK</currency>
+                </price>
+                <price type="discounted">
+                    <discount percent="%">20</discount>
+                    <discounted_value>29600</discounted_value>
+                    <currency>CZK</currency>
+                </price>
+            </prices>
+        </detail>
+    </company>
+</laptops>
